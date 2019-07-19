@@ -3,8 +3,6 @@ const loadFile = function (event) {
     // Load image 
     img = document.getElementById('output')
     img.src = URL.createObjectURL(event.target.files[0])
-
-
 }
 
 function getImageData() {
@@ -41,8 +39,6 @@ function getImageData() {
 
     // delete last comma
     cssString = cssString.substring(0, cssString.length - 2)
-
-    console.log(cssString)
 
     $('#output').css("display", "none")
     $('#css-div-parent').css("width", imageWidth)
